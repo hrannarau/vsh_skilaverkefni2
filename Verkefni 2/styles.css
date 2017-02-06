@@ -1,0 +1,164 @@
+body{
+	max-width: 60em;
+	margin: auto;
+}
+
+input{
+	display: none;
+}
+label{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	transition: all .15s ease;
+	cursor: pointer;
+	color: lightgreen;
+	text-align: center;
+}
+label:hover{
+	color: darkgreen;
+	background-color: lightgreen;
+}
+input:checked + label{
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.15);
+	color: blue;
+}
+input:checked ~ .topmenu {
+	position: fixed;
+	bottom: 1.7em;
+	left: 0;
+	z-index: 999;
+}
+
+label {
+	border: 1px solid lightgreen;
+	border-radius: 6px;
+	background-color: darkgreen;
+}
+.topmenu li {
+	border-bottom: 1px solid lightgreen;
+}
+.topmenu li:last-child {
+	border-bottom: 0;
+}
+.topmenu a {
+	text-decoration: none;
+	color: darkgreen;
+	display: block;
+	padding: 5px 12px;
+}
+.topmenu {
+	border: 1px solid green;
+	display: block;
+	color: black;
+	position: fixed;
+	bottom: -10em;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	transition: all 1s ease;
+}
+
+a:link{
+	color: white;
+	background-color: darkgreen;
+}
+a:visited{
+	color: white;
+}
+a:active{
+	color: white;
+}
+a:hover{
+	background-color: green;
+	color: white;
+}
+article{
+	flex: 2 2 1em;
+}
+header,
+footer,
+aside{
+	flex: 1 1 0;
+}
+section{
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+}
+.vinstri{
+	order: 2;
+}
+.haegri{
+	order: 3;
+}
+.mid{
+	order: 1;
+}
+.header{
+	display: flex;
+}
+.box{
+	padding: 10px 5px 5px 10px;
+}
+.margin{
+	padding: 7px;
+}
+.bggreen{
+	background-color: darkgreen;
+}
+.bglgreen{
+	background-color: lightgreen;
+}
+.bgred{
+	background-color: #E8535A;
+}
+.bgyellow{
+	background-color: #E8D527;
+}
+.bgblue{
+	background-color: #50BDE8;
+}
+.bgpur{
+	background-color: #8338FF;
+}
+.borderleft{
+	border-left: 1px solid green;
+	padding: 10px;
+	text-align: center;
+}
+.co12{
+	width: 200px;
+}
+.col14{
+	width: 250px;
+}
+.borderright{
+	border-right: 1px solid green;
+}
+.padding{
+	padding-left: 55px;
+	padding-right: 55px;
+}
+.paddingleft{
+	padding-left: 5px;
+}
+.abcd{
+	display: flex;
+	position: relative;
+	margin-left: 20px;
+	padding-bottom: 20px;
+}
+.abcdsize{
+	width: 3em;
+	height: 3em;
+	text-align: center;
+	font-size: 1em;
+	line-height: 50px;
+}
+
